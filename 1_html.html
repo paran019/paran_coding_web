@@ -2,87 +2,75 @@
 <head>
   <title>HTML 수강 노트</title>
   <meta charset="utf-8">
-  <style>
-    h5{
-      text-align: right;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="https://opentutorials.org/course/3084" target="_blank" title="생활코딩 Web1 HTML과 인터넷"><h1>WEB 1 - HTML & internet</h1></a>
-  <h6>HTML 편집기 : Atom</h6>
-  <h5>수강일 : 2019. 12. 23 </h5>
-<br>
-<ol>
-  <li>글자 강조</li>
-  <li>단락 나누기</li>
-  <li>태그와 속성</li>
-  <li>목차와 부모태그</li>
-  <li>문서의 구조</li>
-  <li>주소창 연결</li>
-</ol>
-<br>
-<h2>HTML</h2>
-<p><strong>HyperText Markup Language</strong></p>
-<h3><strong>글자 강조</strong></h3>
-  < > 텍스트 < / >
-  <br><br>
-  1. 제목 : H1 ~ H6
-  Headline. 글자 크기 + 굵은 글씨. 숫자가 작을수록 커짐.<br>
-  <h1>h1</h1>
-  <h2>h2</h2>
-  <h3>h3</h3>
+    <h5>수강일 : 2019. 12. 23 </h5>
+    <h4><a href="0_home.html" id="home"> HOME </a></h4><br>
+    <a href="https://opentutorials.org/course/3084" target="_blank" title="생활코딩 Web1 HTML과 인터넷"><h1>WEB 1 - HTML & internet</h1></a>
+  <div id="grid">
+    <ol>
+      <li>글자 강조</li>
+      <li>단락 나누기</li>
+      <li>태그와 속성</li>
+      <li>목차와 부모태그</li>
+      <li>문서의 구조</li>
+      <li>주소창 연결</li>
+    </ol>
+    <div>
+      <h3 id="html">HTML : HyperText Markup Language</h3>
+      <h2>1.글자 강조</h3>
+        < > 텍스트 < / >
+        <br><br>
+        1)제목 : H1 ~ H6
+        Headline. 글자 크기 + 굵은 글씨. 숫자가 작을수록 커짐.<br>
 
-  <br>주소창 연결<br>
-  2.굵은 글씨 : strong<br><br>
-  3.밑줄 : u <br>
-  Underline의 약자.<br><br>
-<h3>단락 나누기</h3><br>
-  1. 줄바꿈 : br<br>
-  line break.<br>
-  닫는 태그X 연달아 쓰면 줄간격이 넓어짐.<br>
-  2.문단 : p<br>
-  Paragraph.<br>
-  닫는 태그O css 쓸 때 여백 크기 조절 가능. html만 보고도 같은 문단인지 알 수 있음.<br>
-  3. tap 키<br>
-  태그x 사이트에는 반영되지 않으나 편집기에서만 들여쓰기로 보임<br><br>
-<h3>태그와 속성</h3><br>
-  속성="속성값"<br>
-  태그만으로 부족한 기능을 보충. 속성들 순서는 상관 없음.
-  1.img<br>
-  <img src="coding.jpg" width="500"><br>
-  여는태그. img src(sorce)="이미지주소" width="nnn%" 닫는태그.<br>
-  가로크기는 100%로 하면 사이트 크기에 따라 이미지 크기도 맞춰서 달라짐.<br><br>
-<h3>목차와 부모태그</h3><br>
-  1.부모태그 : ul<br>
-  Unordered List. 땡떙이.<br>
-  2.부모태그 : ol<br>
-  ordered list. 자동으로 숫자가 붙음.<br>
-  3.자식태그 : li<br>
-  부모태그는 반드시 자식태그가 붙어야 함.<br><br>
+        <br>주소창 연결<br>
+        2)굵은 글씨 : strong<br>
+        3)밑줄 : u (Underline)<br><br>
 
-<h3>문서의 구조</h3><br>
-  1.html임을 표시 : !DOCTYPE html<br>
-  2.본문을 설명 : head <br>
-  <br>
-  2-1.웹페이지 이름 : title<br>
-  2-2.언어 한글 설정 : meta<br>
-  여는태그. meta charset(캐릭터셋=글자세팅)="utf-8" 닫는태그.<br>
-  <br>
-  3.본문 : body<br>
-  4.디자인 용<br>
-  블럭 레벨 엘리먼트 : div.<br>
-  인라인 엘리먼트 : span<br>
-  <br><br>
+      <h2>2.단락 나누기</h2><br>
+        1)줄바꿈 : br (line break)<br>
+        닫는 태그X 연달아 쓰면 줄간격이 넓어짐.<br>
+        2)문단 : p(Paragraph)<br>
+        닫는 태그O css 쓸 때 여백 크기 조절 가능. html만 보고도 같은 문단인지 알 수 있음.<br>
+        3) tap 키<br>
+        태그x 사이트에는 반영되지 않으나 편집기에서만 들여쓰기로 보임<br><br>
 
-<h3>주소창 연결</h3>
-  1.하이퍼링크 : a<br>
-  anchor. 닻.<br>
-  여는태그. a href="주소" 닫는태그.<br>
-  2.새 탭으로 링크 : target 속성 <br>
-  target="_blank"<br>
-  3.클릭 전 미리보기 : title 속성
-  title="미리보기 내용"<br>
+      <h2>3.태그와 속성</h2><br>
+        속성="속성값"<br>
+        태그만으로 부족한 기능을 보충. 속성들 순서는 상관 없음.
+        1)img<br>
+        <img src="coding.jpg" width="500"><br>
+        여는태그. img src(sorce)="이미지주소" width="nnn%" 닫는태그.<br>
+        가로크기는 100%로 하면 사이트 크기에 따라 이미지 크기도 맞춰서 달라짐.<br><br>
 
+      <h2>4.목차와 부모태그</h2><br>
+        1)부모태그 : ul(Unordered List)<br>
+        2)부모태그 : ol(ordered list) 자동으로 숫자가 붙음.<br>
+        3)자식태그 : li<br>
+        부모태그는 반드시 자식태그가 붙어야 함.<br><br>
+
+      <h2>5.문서의 구조</h2><br>
+        1)html임을 표시 : !DOCTYPE html<br>
+        2)본문을 설명 : head <br>
+        2-1)웹페이지 이름 : title<br>
+        2-2)언어 한글 설정 : meta<br>
+        여는태그. meta charset(캐릭터셋=글자세팅)="utf-8" 닫는태그.<br>
+        3)본문 : body<br>
+        4)디자인 용<br>
+        블럭(가로 한 줄 차지) 레벨 엘리먼트 : div.<br>
+        인라인(자기 크기만큼 차지) 엘리먼트 : span<br>
+        <br><br>
+
+      <h2>6.주소창 연결</h2>
+        1)하이퍼링크 : a (anchor=닻)<br>
+        여는태그. a href="주소" 닫는태그.<br>
+        2)새 탭으로 링크 : target 속성 <br>
+        target="_blank"<br>
+        3)클릭 전 미리보기 : title 속성
+        title="미리보기 내용"<br><br>
+    </div>
+  </div>
 </body>
 </html>
