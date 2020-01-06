@@ -9,15 +9,19 @@
 
   <div id="ui">
 
-  <div class="ui-a">
-    <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-  ">
-  <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-  "></div>
+  <input class="ui-a" type="button" value="밤" onclick="
+      if(document.querySelector('.ui-a').value === '밤'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('a').style.color = 'white';
+        document.querySelector('.ui-a').value = '낮';
+      } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('a').style.color = 'black';
+        document.querySelector('.ui-a').value = '밤';
+      }
+    ">
 
   <div class="ui-b"><a href="0_home.html"> <strong>HOME</strong> </a></div>
 
@@ -32,6 +36,7 @@
       <li>JavaScript</li>
       <li>Data types</li>
       <li>야간모드</li>
+      <li>조건문</li>
     </ol>
 
       <div>
@@ -45,33 +50,63 @@
           - console : 웹브라우저 개발자 도구에서 사용<br>
             사용중 실행을 미루고 싶을 땐 shift + enter<br>
 
-        <h2>2.Data types : String(문자열) & Number(숫자)</h2>
-            1)String<br>
+        <h2>2.Data types</h2>
+            1)String (문자열)<br>
             - 큰 따옴표 or 작은 따옴표<br>
             ex.) 텍스트의 글자 수를 알고 싶을 때<br>
                  "hello world" .length<br><br>
+
             2)Number<br>
-            - 산술연산자 : + - * /<br>
-            - 대입연산자 : =<br>
+            - 산술 연산자 : + - * /<br>
+            - 대입 연산자 : =<br>
              ex.) 1+1의 값을 알림 창으로 띄우고 싶을 때<br>
                   alert(1+1);<br><br>
-            3)문자열과 숫자를 정확히 표기해야 하는 이유.<br>
+            - 문자열과 숫자를 정확히 표기해야 하는 이유.<br>
               "1"+"1" = "11"<br>
               1+1 = 2<br><br>
-            4)변수를 쓸 땐 앞에 var(variable) 붙이기<br>
+            - 변수를 쓸 땐 앞에 var(variable) 붙이기<br><br>
 
-        <h2>3.야간모드</h2>
-            ex.)<br>
-            < body><br>
-            < input type="button" value="night" onclick="<br>
-            document.querySelector('body').style.backgroundColor = 'black';<br>
-            document.querySelector('body').style.color = 'white';<br>
-          "><br>
-          < input type="button" value="day" onclick="<br>
-            document.querySelector('body').style.backgroundColor = 'white';<br>
-            document.querySelector('body').style.color = 'black';<br>
-          "><br>
-            < /body><br>
+        <h2>3.2버튼 야간모드</h2>
+            - 야간모드 버튼과 주간모드 버튼 2개를 만드는 방법<br>
+            < input type ="button" value="글자" 조건<br>
+             document.querySelector('선택자').style.효과;><br><br>
+             * queryselector는 선택자 중 첫번째만 적용 됨.
+
+              ex.)<br>
+              < body><br>
+              < input type="button" value="night" onclick="<br>
+              document.querySelector('body').style.backgroundColor = 'black';<br>
+              document.querySelector('body').style.color = 'white';<br>
+            "><br>
+            < input type="button" value="day" onclick="<br>
+              document.querySelector('body').style.backgroundColor = 'white';<br>
+              document.querySelector('body').style.color = 'black';<br>
+            "><br>
+              < /body><br>
+
+          <h2>4.조건문</h2>
+                1) 비교 연산자(Boolean) <br>
+                  - 조건을 비교해서 옳은지(true) 틀린지(false) 출력해주는 연산자.<br><br>
+                ex.) 좌항과 우항이 같은가.<br>
+                    < script><br>
+                     document.write(1===1)<br>
+                    < /script><br><br>
+                ex.) 좌항이 우항보다 큰가(&lt;).<br>
+                    < script><br>
+                     document.write(1< 2 )<br>
+                    < /script><br><br>
+
+                2) 조건문을 활용한 원버튼 야간모드<br>
+                - 만약 id 선택자가 조건이라면, {}안의 코드를 실행하고,<br>
+                  아니라면, {}안의 코드를 실행하라.<br><br>
+                < input id ="id선택자" type="button" value="글자" 조건="<br>
+                if(document.querySelector('#id선택자'). value === '조건')<br>
+                  document.querySelector('선택자').style.효과;<br>
+                }else {<br>
+                  document.querySelector('선택자').style.효과;<br>
+                }<br>
+              "<br>
+
       </div>
 </div>
 </body>

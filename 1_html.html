@@ -7,15 +7,19 @@
 <body>
   <div id="ui">
 
-  <div class="ui-a">
-    <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-  ">
-  <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-  "></div>
+    <input class="ui-a" type="button" value="밤" onclick="
+        if(document.querySelector('.ui-a').value === '밤'){
+          document.querySelector('body').style.backgroundColor = 'black';
+          document.querySelector('body').style.color = 'white';
+          document.querySelector('a').style.color = 'white';
+          document.querySelector('.ui-a').value = '낮';
+        } else {
+          document.querySelector('body').style.backgroundColor = 'white';
+          document.querySelector('body').style.color = 'black';
+          document.querySelector('a').style.color = 'black';
+          document.querySelector('.ui-a').value = '밤';
+        }
+      ">
 
   <div class="ui-b"><a href="0_home.html"> <strong>HOME</strong> </a></div>
 
@@ -60,6 +64,7 @@
         1)img<br>
         <img src="coding.jpg" width="500"><br>
         여는태그. img src(sorce)="이미지주소" width="nnn%" 닫는태그.<br>
+        소문자 대문자 구분 중요! png PNG 구분 같은 것.<br>
         가로크기는 100%로 하면 사이트 크기에 따라 이미지 크기도 맞춰서 달라짐.<br><br>
 
       <h2>4.목차와 부모태그</h2><br>

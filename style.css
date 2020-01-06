@@ -1,21 +1,17 @@
 <style>
-    html, body {
-      margin:0px;
-      padding:0px;
+    body {
+      margin: 0;
     }
     a {
-      color:black;
+      color: black;
       text-decoration: none;
     }
-    h2{
-      margin-bottom:5px;
-    }
     h1 {
-      font size:40px;
-      text-align:center;
+      font-size: 200%;
+      text-align: center;
       border-bottom:2px solid gray;
-      padding:10px;
-      margin:0px;
+      padding:20px;
+      margin:0;
     }
     h2{
       margin-bottom:5px;
@@ -29,15 +25,16 @@
 
     #ui{
       display: grid;
-      grid-template-columns: 100px 70px 1fr;
+      grid-template-columns: 28px 70px 1fr;
     }
     .ui-b{
-      border:2px solid:black;
+      font-size: larger;
+      text-align: center;
     }
     .ui-c{
+      font-size: 80%;
       text-align: right;
     }
-
     #grid{
       display: grid;
       grid-template-columns: 155px 1fr;

@@ -18,14 +18,24 @@
   </style>
 </head>
 <body>
-  <input type="button" value="night" onclick="
-  document.querySelector('body').style.backgroundColor = 'black';
-  document.querySelector('body').style.color = 'white';
-">
-<input type="button" value="day" onclick="
-  document.querySelector('body').style.backgroundColor = 'white';
-  document.querySelector('body').style.color = 'black';
-">
+
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    var as = document.getElementsByTagName('a');
+    for(var i=0; i<as.length; i++){
+      as[i].style.color = 'white';}
+      document.getElementsByTagName('ol')[0].style.color = 'white';
+  ">
+  <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    var as = document.getElementsByTagName('a');
+    for(var i=0; i<as.length; i++){
+      as[i].style.color = 'black';}
+      document.getElementsByTagName('ol')[0].style.color = 'black';
+  ">
+
   <h1>수강 노트</h1>
   <ul>
     <li><a href="1_html.html" title="12.23. html 수강 기록">HTML</a></li>
