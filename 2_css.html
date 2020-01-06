@@ -6,9 +6,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h5>수강일 : 2019. 12. 24 ~ 28</h5>
-  <h4><a href="0_home.html" id="home"> HOME </a></h4><br>
+  <div id="ui">
+
+  <div class="ui-a">
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+  "></div>
+
+  <div class="ui-b"><a href="0_home.html"> <strong>HOME</strong> </a></div>
+
+  <div class="ui-c">수강일 : 2019. 12. 24 ~ 28</div>
+</div>
+
   <h1><a href="https://opentutorials.org/course/3086/18328" target="_blank">Web 2 - CSS : 웹퍼블리셔</a></h1>
+
   <div id="grid">
     <ol>
         <li>기본문법</h3></li>
@@ -22,7 +38,7 @@
     <div>
         <h2>1.기본문법</h2>
           <strong>1)style</strong><br>
-          - head 태그 아래에 style 태그, 그 안에 효과들.<br>
+          - head 태그 아래에 style 속성, 그 안에 효과들.<br>
           - head 안에서는 대상 태그 붙은 텍스트 모두 적용, body에서 속성 붙이면 대상 텍스트에만 적용.<br>
           - 효과 뒤에는 항상 ; 붙일 것. 1개 이상의 선택자에 2개 이상 효과 붙일 때 구분.<br><br>
           - ex.) h1 글자크기 40, '담요'텍스트 빨간색 + 밑줄 제거<br>
@@ -40,6 +56,7 @@
           - 효과를 적용 할 대상을 선택. 그룹도 가능.
           1) id 선택자 : #으로 표시. 유일한 코드에만 사용. 우선순위 제일 높음.<br>
           2) class 선택자 : .으로 표시. 여러개의 코드를 그룹으로 묶음.<br>
+          - ex. ) < div class="first">하나</ div><br>
           3) tag 선택자 : 해당 태그로 표시. 우선순위 제일 낮음.<br><br>
           - ex.) 현재 있는 "둘" 텍스트는 빨간색, 봤던 페이지 "하나""셋""텍스트는 회색.<br>
           < head><br>

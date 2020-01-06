@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript 수강노트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="ui">
+
+  <div class="ui-a">
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+  "></div>
+
+  <div class="ui-b"><a href="0_home.html"> <strong>HOME</strong> </a></div>
+
+  <div class="ui-c">수강일 : 2020. 01. 05 ~ </div>
+
+</div>
+
+  <h1><a href="https://opentutorials.org/course/3085" target="_blank">Web 2 - JavaScript </a></h1>
+
+  <div id="grid">
+    <ol>
+      <li>JavaScript</li>
+      <li>Data types</li>
+      <li>야간모드</li>
+    </ol>
+
+      <div>
+        <h2>1.JavaScript</h2>
+          1)특징<br>
+          - body 태그 안에 존재<br>
+          - 자극이나 조건에 반응하는 유동적인 언어<br>
+          2)사용 방법<br>
+          - scrip 태그<br>
+          - input 태그와 event<br>
+          - console : 웹브라우저 개발자 도구에서 사용<br>
+            사용중 실행을 미루고 싶을 땐 shift + enter<br>
+
+        <h2>2.Data types : String(문자열) & Number(숫자)</h2>
+            1)String<br>
+            - 큰 따옴표 or 작은 따옴표<br>
+            ex.) 텍스트의 글자 수를 알고 싶을 때<br>
+                 "hello world" .length<br><br>
+            2)Number<br>
+            - 산술연산자 : + - * /<br>
+            - 대입연산자 : =<br>
+             ex.) 1+1의 값을 알림 창으로 띄우고 싶을 때<br>
+                  alert(1+1);<br><br>
+            3)문자열과 숫자를 정확히 표기해야 하는 이유.<br>
+              "1"+"1" = "11"<br>
+              1+1 = 2<br><br>
+            4)변수를 쓸 땐 앞에 var(variable) 붙이기<br>
+
+        <h2>3.야간모드</h2>
+            ex.)<br>
+            < body><br>
+            < input type="button" value="night" onclick="<br>
+            document.querySelector('body').style.backgroundColor = 'black';<br>
+            document.querySelector('body').style.color = 'white';<br>
+          "><br>
+          < input type="button" value="day" onclick="<br>
+            document.querySelector('body').style.backgroundColor = 'white';<br>
+            document.querySelector('body').style.color = 'black';<br>
+          "><br>
+            < /body><br>
+      </div>
+</div>
+</body>
+</html>

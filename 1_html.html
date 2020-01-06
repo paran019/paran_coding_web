@@ -5,9 +5,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h5>수강일 : 2019. 12. 23 </h5>
-    <h4><a href="0_home.html" id="home"> HOME </a></h4><br>
+  <div id="ui">
+
+  <div class="ui-a">
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+  "></div>
+
+  <div class="ui-b"><a href="0_home.html"> <strong>HOME</strong> </a></div>
+
+  <div class="ui-c">수강일 : 2019. 12. 23 </div>
+
+</div>
+
     <a href="https://opentutorials.org/course/3084" target="_blank" title="생활코딩 Web1 HTML과 인터넷"><h1>WEB 1 - HTML & internet</h1></a>
+
   <div id="grid">
     <ol>
       <li>글자 강조</li>

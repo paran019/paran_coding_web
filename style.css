@@ -1,13 +1,11 @@
 <style>
-    body {
+    html, body {
       margin:0px;
+      padding:0px;
     }
     a {
       color:black;
       text-decoration: none;
-    }
-    ol {
-      border-right:none;
     }
     h2{
       margin-bottom:5px;
@@ -22,27 +20,27 @@
     h2{
       margin-bottom:5px;
     }
-    h4 {
-      float:left;
-      margin:0px;
-    }
-    h5 {
-      display:inline;
-      float:right;
-      margin:1.5px;
-    }
     ol {
       border-right:2px solid gray;
       margin:0px;
       padding:20px;
-      width:90px;
-  }
-    #home{
-      color:blue;
+      width:93px;
     }
+
+    #ui{
+      display: grid;
+      grid-template-columns: 100px 70px 1fr;
+    }
+    .ui-b{
+      border:2px solid:black;
+    }
+    .ui-c{
+      text-align: right;
+    }
+
     #grid{
       display: grid;
-      grid-template-columns: 150px 1fr;
+      grid-template-columns: 155px 1fr;
     }
     #html{
       color:gray;
@@ -51,13 +49,6 @@
   @media(max-width:800px){
     #grid{
       display: block;
-    }
-    ol {
-      border-right:none;
-    }
-    h1{
-      font-size:24px;
-      border-bottom:none;
     }
   }
 </style>
